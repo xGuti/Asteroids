@@ -47,6 +47,5 @@ public class PlayerMovement : MonoBehaviour
 
 		float rotation = -Input.GetAxis("Horizontal");
         _rb.rotation += rotation*_force;
-
     }
 }

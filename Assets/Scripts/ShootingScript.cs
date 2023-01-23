@@ -6,7 +6,7 @@ public class ShootingScript : MonoBehaviour
 {
     [SerializeField] private Rigidbody2D _rb;
     [SerializeField] private GameObject _projectilePrefab;
-	[SerializeField] private float _fireRate = .5f;
+	[SerializeField] private float _fireRate = .1f;
 	private float _timeToShot = 0;
     // Update is called once per frame
     void FixedUpdate()
@@ -15,7 +15,7 @@ public class ShootingScript : MonoBehaviour
 		{
 			_timeToShot = _fireRate;
 			Instantiate(_projectilePrefab, 
-				GameObject.Find("Projectile Spawner").transform.position, 
+				-GameObject.Find("Projectile Spawner").transform.position, 
 				this.transform.rotation);
 		}
 		_timeToShot -= Time.deltaTime;
