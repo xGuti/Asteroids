@@ -15,11 +15,11 @@ Unity project of Asteroids(1979) game made by Atari.
 # Tasks
  - Player movement ✔️
  - Screen wrapping ✔️
- - Asteroids spawning and movement ⏳
+ - Asteroids spawning and movement ✔️
  - Shooting system ✔️
  - Collisions ✔️
- - GUI
- - Lives
+ - GUI ⏳
+ - Lives ⏳
  - Score system
  - Win-Lose conditions
  - UFO
